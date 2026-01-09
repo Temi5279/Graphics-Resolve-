@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GRAPHICS RESOLVE — High-End Video Editing</title>
+  <meta name="description" content="Graphics Resolve — high-end video editing for creators (Alight Motion, CapCut). Professional edits, fast turnarounds." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background"></div>
+
+  <header class="site-header">
+    <div class="brand">
+      <a href="#hero" class="logo">GRAPHICS RESOLVE</a>
+    </div>
+    <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="overlayMenu">
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+      <span class="burger-line"></span>
+    </button>
+  </header>
+
+  <nav id="overlayMenu" class="overlay-menu" aria-hidden="true">
+    <div class="menu-inner">
+      <button id="closeMenu" class="close" aria-label="Close menu">&times;</button>
+      <ul class="menu-list">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#work">Work with Confidence</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#newsletter">The Resolve Feed</a></li>
+        <li><a href="#next">Next Project Vibes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <p class="menu-sub">Verified creator • Clear payment terms • Fast, secure delivery</p>
+    </div>
+  </nav>
+
+  <main id="main">
+    <section id="hero" class="hero">
+      <div class="hero-inner">
+        <h1 class="title">GRAPHICS RESOLVE</h1>
+        <p class="subtitle">High‑end video editing for creators — Alight Motion, CapCut, and more. Premium color grading, motion design, and fast turnarounds.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#work">Work With Me</a>
+          <a class="btn ghost" href="#contact">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="work-confidence section">
+      <div class="container">
+        <h2>Work with Confidence</h2>
+        <p class="lead">My payment terms are straightforward: a 30% deposit to secure your project start, and 70% on delivery. This keeps both sides protected and ensures I prioritize your project.</p>
+
+        <div class="payment-steps">
+          <div class="step">
+            <h3>30% Deposit</h3>
+            <p>Reserve your slot — I start edit work after deposit receipt.</p>
+          </div>
+          <div class="divider"></div>
+          <div class="step">
+            <h3>70% Final</h3>
+            <p>Final delivery and handover after your approval and final payment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq section">
+      <div class="container">
+        <h2>FAQ</h2>
+        <div class="accordion">
+          <button class="acc-trigger" aria-expanded="false">How do I know this isn't a scam?</button>
+          <div class="acc-panel">
+            <p>I am a verified creator with a public portfolio and clear payment terms. I require a 30% deposit and provide transparent delivery timelines. You can review past work and request references. You can also pay via tracked/official channels — I value trust and transparency.</p>
+          </div>
+
+          <button class="acc-trigger" aria-expanded="false">What formats do you deliver?</button>
+          <div class="acc-panel">
+            <p>I deliver final edits in MP4 (H.264/HEVC), MOV (ProRes on request), and can export social-ready formats tailored to platform specs (vertical, square, landscape).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="newsletter" class="newsletter section">
+      <div class="container">
+        <h2>The Resolve Feed</h2>
+        <p class="lead">Subscribe for editing tips, case studies, and availability updates.</p>
+
+        <!-- Replace the action URL with your Formspree endpoint when ready -->
+        <form id="newsletterForm" class="newsletter-form" action="#" method="POST" novalidate>
+          <label for="email" class="sr-only">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@domain.com" required>
+          <button type="submit" class="btn primary">Join</button>
+        </form>
+
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <section id="next" class="next-project section">
+      <div class="container">
+        <h2>NEXT PROJECT VIBES... <span class="loading">Loading<span id="dots">...</span></span></h2>
+        <div class="morph-wrap" aria-hidden="true">
+          <div class="blob blob-a"></div>
+          <div class="blob blob-b"></div>
+          <div class="blob blob-c"></div>
+        </div>
+        <p class="muted">3D morphing glowing shapes — animation driven by CSS + JS for subtle, cinematic motion.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="lead">For bookings and inquiries, email me directly:</p>
+        <p class="contact-email"><a href="mailto:graphicsresolve.studio@gmail.com">graphicsresolve.studio@gmail.com</a></p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>&copy; <span id="year"></span> Graphics Resolve — All rights reserved.</small>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+    </html>
