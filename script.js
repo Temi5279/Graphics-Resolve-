@@ -1,21 +1,16 @@
-const hamburger = document.getElementById('hamburger');
-const closeBtn = document.getElementById('close-btn');
-const overlay = document.getElementById('menu-overlay');
-const menuLinks = document.querySelectorAll('.menu-link');
+const ham = document.getElementById('ham-menu');
+const overlay = document.getElementById('overlay');
+const links = document.querySelectorAll('.nav-link');
 
-// Open Menu
-hamburger.addEventListener('click', () => {
-    overlay.classList.add('active');
-});
-
-// Close Menu
-closeBtn.addEventListener('click', () => {
-    overlay.classList.remove('active');
+ham.addEventListener('click', () => {
+    ham.classList.toggle('open');
+    overlay.classList.toggle('active');
 });
 
 // Close menu when a link is clicked
-menuLinks.forEach(link => {
+links.forEach(link => {
     link.addEventListener('click', () => {
+        ham.classList.remove('open');
         overlay.classList.remove('active');
     });
 });
